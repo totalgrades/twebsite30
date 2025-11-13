@@ -232,4 +232,6 @@ return [
 
     ],
 
+    'school_portal' => env('SCHOOL_PORTAL'),
+
 ];

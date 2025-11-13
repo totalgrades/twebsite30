@@ -115,15 +115,19 @@
                                                     <li class="">
                                                         <a href="{{url('schoolRegistrationForm')}}">Register</a>
                                                     </li>
+
+                                                    <li>
+                                                        <a href="{{ config('app.school_portal') ?? '#' }}">Demo</a>
+                                                    </li>
                                                     
-                                                    <li class="dropdown">
+                                                    <!-- <li class="dropdown">
                                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demo</a>
                                                         <ul class="dropdown-menu">
                                                             
                                                             <li><a href="https://demo20.totalgrades.org" target="_blank">Totalgrades v2.0 <span style="color: #3498DB"><strong>(latest version)</strong></span> </a></li>
                                                             <li><a href="https://demo.totalgrades.com" target="_blank">Totalgrades v1.0</a></li>
                                                         </ul>
-                                                    </li>
+                                                    </li> -->
                                                 
                                                     <li class="dropdown">
                                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation</a>
