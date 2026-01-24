@@ -34,7 +34,7 @@
                 </li>
 
                 <li {{{ (Request::is('private/profile') ? 'class=active' : '') }}}>
-                    <a href="{{ url('/private/profile') }}">
+                    <a href="{{ route('private.profile') }}">
                         <i class="fa fa-user"></i>
                         User Profile
                     </a>

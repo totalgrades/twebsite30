@@ -28,9 +28,9 @@
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-user-plus" style="color:#F3BB45;"></i></div>
-                  <div class="count">{{@$users->count()}}</div>
+                  <div class="count">{{@$admin_users->count()}}</div>
                   <h3>Admin Users</h3>
-                  <p>There are a total of {{@$users->count()}} admin users</p>
+                  <p>There are a total of {{@$admin_users->count()}} admin users</p>
                 </div>
               </div>
             </div>

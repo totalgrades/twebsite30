@@ -32,6 +32,7 @@ Class PrivateAdminViewComposer {
         $contactus = ContactUs::get();
 
         $users = User::get();
+        $admin_users = User::where('is_admin', '=', 1)->get();
 
         $school_registrations = RegistrationSchool::get();
 
@@ -46,6 +47,7 @@ Class PrivateAdminViewComposer {
         ->with('job_applications', $job_applications)
         ->with('contactus', $contactus)
         ->with('users', $users)
+        ->with('admin_users', $admin_users)
         ->with('school_registrations', $school_registrations)
         ->with('categories', $categories)
         ->with('posts', $posts);

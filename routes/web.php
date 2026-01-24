@@ -44,10 +44,16 @@ Auth::routes();
 //Logged in users
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/private/profile', 'ProfileController@show')->name('private.profile');
+    Route::post('/private/profile/password', 'ProfileController@updatePassword')->name('private.profile.password');
+});
+
 //Logged in Admin users
 Route::group(['middleware' => 'admin'], function () {
     
-    Route::get('/admin/home', 'Admin\HomeController@index');
+    Route::get('/admin/home', 'Admin\HomeController@index')->name('admin.home');
+    Route::post('/admin/users', 'Admin\HomeController@storeUser')->name('admin.users.store');
     Route::get('/admin/contactformsubmissions', 'Admin\HomeController@contactFormSubmissions');
 
     //Documentation
